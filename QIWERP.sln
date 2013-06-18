@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WERP", "WERP\WERP.csproj", "{FA468F77-4BAA-43D4-8EA5-95CD42A0BEEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WERP.Tests", "WERP.Tests\WERP.Tests.csproj", "{ECFA71C0-D198-4EF9-9039-73F87BF2EFE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA468F77-4BAA-43D4-8EA5-95CD42A0BEEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA468F77-4BAA-43D4-8EA5-95CD42A0BEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA468F77-4BAA-43D4-8EA5-95CD42A0BEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA468F77-4BAA-43D4-8EA5-95CD42A0BEEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFA71C0-D198-4EF9-9039-73F87BF2EFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFA71C0-D198-4EF9-9039-73F87BF2EFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFA71C0-D198-4EF9-9039-73F87BF2EFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFA71C0-D198-4EF9-9039-73F87BF2EFE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
