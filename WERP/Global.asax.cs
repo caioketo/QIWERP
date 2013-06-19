@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Net.Http.Formatting;
 
 namespace WERP
 {
@@ -19,7 +20,13 @@ namespace WERP
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DbContext>());
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            RouteCollection routes = RouteTable.Routes;
+            routes.MapRoute(
+                "Produtos",
+                "Produtos/JSON",
+                new { controller = "Produtos", action = "IndexJSON" }
+            );
+            RouteConfig.RegisterRoutes(routes);
         }
     }
 }

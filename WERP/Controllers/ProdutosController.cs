@@ -21,6 +21,11 @@ namespace WERP.Controllers
             return View(db.ProdutoModels.ToList());
         }
 
+        public JsonResult IndexJson()
+        {
+            return Json(db.ProdutoModels.ToList(), JsonRequestBehavior.AllowGet);
+        }
+
         //
         // GET: /Produtos/Details/5
 
