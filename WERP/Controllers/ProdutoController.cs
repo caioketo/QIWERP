@@ -5,29 +5,25 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WERP.Models.Produtos;
 using WERP.Models;
 
 namespace WERP.Controllers
 {
-    public class ProdutosController : Controller
+    public class ProdutoController : Controller
     {
         private WERPContext db = new WERPContext();
 
         //
-        // GET: /Produtos/
+        // GET: /Produto/
 
         public ActionResult Index()
         {
             return View(db.ProdutoModels.ToList());
         }
 
-        public JsonResult IndexJson()
-        {
-            return Json(db.ProdutoModels.ToList(), JsonRequestBehavior.AllowGet);
-        }
-
         //
-        // GET: /Produtos/Details/5
+        // GET: /Produto/Details/5
 
         public ActionResult Details(int id = 0)
         {
@@ -40,7 +36,7 @@ namespace WERP.Controllers
         }
 
         //
-        // GET: /Produtos/Create
+        // GET: /Produto/Create
 
         public ActionResult Create()
         {
@@ -48,7 +44,7 @@ namespace WERP.Controllers
         }
 
         //
-        // POST: /Produtos/Create
+        // POST: /Produto/Create
 
         [HttpPost]
         public ActionResult Create(ProdutoModel produtomodel)
@@ -64,7 +60,7 @@ namespace WERP.Controllers
         }
 
         //
-        // GET: /Produtos/Edit/5
+        // GET: /Produto/Edit/5
 
         public ActionResult Edit(int id = 0)
         {
@@ -77,7 +73,7 @@ namespace WERP.Controllers
         }
 
         //
-        // POST: /Produtos/Edit/5
+        // POST: /Produto/Edit/5
 
         [HttpPost]
         public ActionResult Edit(ProdutoModel produtomodel)
@@ -92,7 +88,7 @@ namespace WERP.Controllers
         }
 
         //
-        // GET: /Produtos/Delete/5
+        // GET: /Produto/Delete/5
 
         public ActionResult Delete(int id = 0)
         {
@@ -105,7 +101,7 @@ namespace WERP.Controllers
         }
 
         //
-        // POST: /Produtos/Delete/5
+        // POST: /Produto/Delete/5
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)

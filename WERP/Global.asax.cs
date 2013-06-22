@@ -21,11 +21,11 @@ namespace WERP
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteCollection routes = RouteTable.Routes;
-            routes.MapRoute(
-                "Produtos",
-                "Produtos/JSON",
-                new { controller = "Produtos", action = "IndexJSON" }
-            );
+            //routes.MapRoute(
+                //"Produtos",
+                //"Produtos/JSON",
+                //new { controller = "Produtos", action = "IndexJSON" }
+            //);
             RouteConfig.RegisterRoutes(routes);
         }
     }

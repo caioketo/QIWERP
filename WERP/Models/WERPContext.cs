@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using WERP.Models.Produtos;
 
 namespace WERP.Models
 {
